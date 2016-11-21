@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/global.css">
+<a href="/">&larr; Examples index</a>
+<div id="app">
+  <h1>No Vue instance</h1>
+  <ul>
+    <li><a onclick="handler(1)">router.replace('/foo')</a></li>
+    <li><a onclick="handler(2)">router.push('/bar')</a></li>
+    <li><a onclick="handler(3)">router.back()</a></li>
+    <li><a onclick="handler(4)">router.forward()</a></li>
+    <li><a onclick="handler(5)">router.go(-1)</a></li>
+  </ul>
+  <p>
+    <b>Current Location:</b> <span class="location">/</span>
+  </p>
+  <button onclick="mount()" id="mount">Mount</button>
+</div>
+<script src="/__build__/shared.js"></script>
+<script src="/__build__/no-instance.js"></script>

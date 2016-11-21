@@ -92,7 +92,7 @@ export class History {
         if (this.pending === route) {
           this.pending = null
           cb(route)
-          this.router.app.$nextTick(() => {
+          _Vue.nextTick(() => {
             postEnterCbs.forEach(cb => cb())
           })
         }
